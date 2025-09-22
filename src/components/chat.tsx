@@ -125,31 +125,30 @@ export default function ChatTemplate() {
   };
 
   return (
-    <div className="flex flex-col  w-[100%] sm:w-[40%] h-screen md:h-[780px] bg-[#FFF8EC] rounded-xl shadow-lg overflow-hidden">
+    <div className="flex flex-col w-full sm:w-[40%] h-[100vh] sm:h-screen md:h-[780px] bg-[#FFF8EC] rounded-xl shadow-lg overflow-hidden">
       <EmergencyDialog
         open={msgEmergensy}
         onClose={() => setMsgEmergensy(false)}
       />
-      <div className="flex items-center p-4 bg-[#f4eee2] text-[#3A2F2F] font-semibold text-lg">
-        <img src="/logo.png" alt="logo" className="w-17 mr-2"/>
-        
+      <div className="flex items-center p-3 sm:p-4 bg-[#f4eee2] text-[#3A2F2F] font-semibold text-base sm:text-lg">
+        <img src="/logo.png" alt="logo" className="w-12 sm:w-16 lg:w-20 mr-2"/>
       </div>
 
     
-      <div className="flex-1 p-4 overflow-y-auto space-y-2 flex flex-col">
+      <div className="flex-1 p-3 sm:p-4 overflow-y-auto space-y-2 flex flex-col">
         {messages.map((msg, idx) => (
           <div
             key={idx}
-            className={`max-w-[80%] p-3 rounded-xl ${
+            className={`max-w-[85%] sm:max-w-[80%] p-2 sm:p-3 rounded-xl text-sm sm:text-base ${
               msg.sender === "user" ? "bg-[#F5C04C] text-[#3A2F2F] self-end" : "bg-white text-[#3A2F2F] self-start"
             }`}
           >
-            {msg.previewUrl && <img src={msg.previewUrl} className="h-20"></img>}
+            {msg.previewUrl && <img src={msg.previewUrl} className="h-16 sm:h-20"></img>}
             {msg.text}
           </div>
         ))}
         {isLoading && (
-        <div className="mr-auto text-black p-2 rounded-lg max-w-[70%]">
+        <div className="mr-auto text-black p-2 rounded-lg max-w-[75%] sm:max-w-[70%]">
             <TypingLoader />
         </div>
         )}
@@ -157,44 +156,45 @@ export default function ChatTemplate() {
       </div>
 
       
-      <div className="flex w-full p-4 border-t border-gray-300">
+      <div className="flex w-full p-3 sm:p-4 border-t border-gray-300">
         <form onSubmit={sendMessage} className="flex w-full">
           <div className="w-full rounded-xl items-center border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F5C04C]">
-            {selectedFile && <img src={URL.createObjectURL(selectedFile)} className="h-20 ml-2 mt-1"></img>}
+            {selectedFile && <img src={URL.createObjectURL(selectedFile)} className="h-16 sm:h-20 ml-2 mt-1"></img>}
             <div className="flex items-center">
               <input
               value={input}
               name="input"
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type a message..."
-              className="flex-1 p-2 text-black   "
-              /> 
-          
+              className="flex-1 p-2 text-black text-sm sm:text-base"
+              />
+
               <input
                   type="file"
                   name="file"
                   ref={fileInputRef}
                   className="hidden"
-                  onChange={handleFileChange} 
+                  onChange={handleFileChange}
               />
               <Paperclip
-                  className="cursor-pointer text-gray-500 hover:text-gray-700 mr-3"
+                  className="cursor-pointer text-gray-500 hover:text-gray-700 mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6"
                   onClick={handleClick}
               />
             </div>
           </div>
-          
-       
-        
+
+
         <button
           type="submit"
-          className="ml-2 px-4 py-2 bg-[#F5C04C] text-[#3A2F2F] rounded-xl font-semibold hover:bg-yellow-500 h-10"
+          className="ml-2 px-3 sm:px-4 py-2 bg-[#F5C04C] text-[#3A2F2F] rounded-xl font-semibold hover:bg-yellow-500 h-10 text-sm sm:text-base"
         >
           Send
         </button>
         </form>
-        
+
       </div>
+
+      
     </div>
   );
 }
