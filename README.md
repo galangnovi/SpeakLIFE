@@ -39,22 +39,25 @@ Before running SpeakLIFE, make sure you have installed:
 ```bash
 git clone https://github.com/galangnovi/SpeakLIFE.git
 cd SpeakLIFE
+```
 
 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
 3️⃣ Setup n8n (Workflow Automation)
 
 Install n8n globally:
 ```bash
 npm install -g n8n
-
+```
 
 Then start it:
 
 ```bash
 n8n start
-
+```
 
 Access n8n via browser:
 👉 http://localhost:5678
@@ -84,7 +87,7 @@ Run ngrok to make your local n8n publicly accessible:
 
 ```bash
 ngrok http 5678
-
+```
 
 You’ll get a public URL like:
 
@@ -124,8 +127,9 @@ This allows you (or your emergency response group) to receive instant alerts whe
 
 Once everything is configured, start the app:
 
+```bash
 npm run dev
-
+```
 
 Then open your browser:
 👉 http://localhost:3000
