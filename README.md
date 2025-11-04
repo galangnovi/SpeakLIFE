@@ -156,13 +156,14 @@ User Chat
 **Telegram:** Sends alerts to emergency responders
 
 # 🛠 Tech Stack
+
 | Layer | Technology |
-|-------|-------------|
-| 🎨 **Frontend** | React + TypeScript |
-| ⚙️ **Automation** | n8n |
-| 🔗 **Integration** | Telegram Bot API + ngrok |
-| 💅 **Styling** | Tailwind CSS |
-| 🚀 **Deployment** | Vercel (Frontend) + Local n8n Instance |
+|-------|------------|
+| 🎨 **Frontend** | ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) |
+| ⚙️ **Automation** | ![n8n](https://img.shields.io/badge/n8n-FF4733?style=flat&logo=n8n&logoColor=white) |
+| 🔗 **Integration** | ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white) ![ngrok](https://img.shields.io/badge/ngrok-1F1F1F?style=flat&logo=ngrok&logoColor=white) |
+| 💅 **Styling** | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwind-css&logoColor=white) |
+| 🚀 **Deployment** | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) + Local Instance |
 
 # 🧾 Example Workflow Trigger (Concept)
 
