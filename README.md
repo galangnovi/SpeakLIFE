@@ -195,7 +195,7 @@ Together, let’s make every voice matter.
 
 
 
-<div align='center'>
-   <p>🧠 Developed as part of DumbWays Bootcamp project.</p>
+<div align="center" style="margin-top: 40px;">
+  <p>🧠 Developed as part of DumbWays Bootcamp project.</p>
 </div>
 
