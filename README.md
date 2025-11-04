@@ -135,16 +135,18 @@ Then open your browser:
 👉 http://localhost:3000
 
 🧩 Architecture Overview
+<pre>
 User Chat
    │
    ▼
-SpeakLIFE App (Frontend)
+🗨️  SpeakLIFE App (Frontend)
    │
    ▼
-n8n Workflow  ←→  Telegram Alert Bot
+🤖  n8n Workflow  ←→  📢  Telegram Alert Bot
    │
    ▼
-Statistics Logger / Annual Reports
+📊  Statistics Logger / Annual Reports
+</pre>
 
 
 **Frontend:** React + TypeScript (chat interface)
