@@ -147,20 +147,22 @@ n8n Workflow  ←→  Telegram Alert Bot
 Statistics Logger / Annual Reports
 
 
-Frontend: React + TypeScript (chat interface)
+**Frontend:** React + TypeScript (chat interface)
 
-n8n: Detects messages and triggers automation
+**n8n:** Detects messages and triggers automation
 
-Telegram: Sends alerts to emergency responders
+**Telegram:** Sends alerts to emergency responders
 
 # 🛠 Tech Stack
-Layer	Technology
-Frontend	React + TypeScript
-Automation	n8n
-Integration	Telegram Bot API + ngrok
-Styling	Tailwind CSS
-Deployment	Vercel (Frontend), Local n8n instance
-🧾 Example Workflow Trigger (Concept)
+| Layer | Technology |
+|-------|-------------|
+| 🎨 **Frontend** | React + TypeScript |
+| ⚙️ **Automation** | n8n |
+| 🔗 **Integration** | Telegram Bot API + ngrok |
+| 💅 **Styling** | Tailwind CSS |
+| 🚀 **Deployment** | Vercel (Frontend) + Local n8n Instance |
+
+# 🧾 Example Workflow Trigger (Concept)
 
 A user types:
 
