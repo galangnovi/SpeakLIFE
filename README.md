@@ -193,7 +193,9 @@ If you'd like to improve the AI model, workflow, or UI, feel free to submit a pu
 SpeakLIFE is built with compassion to provide hope and connection for anyone who needs to be heard.
 Together, let’s make every voice matter.
 
+
+
 <div align='center'>
-   <p>🧠 *Developed as part of DumbWays Bootcamp project.*</p>
+   <p>🧠 Developed as part of DumbWays Bootcamp project.</p>
 </div>
 
