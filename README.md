@@ -153,7 +153,7 @@ n8n: Detects messages and triggers automation
 
 Telegram: Sends alerts to emergency responders
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 Layer	Technology
 Frontend	React + TypeScript
 Automation	n8n
@@ -175,7 +175,7 @@ If critical intent is detected →
 
 Message is stored for annual report analytics.
 
-🎬 Live Demo
+# 🎬 Live Demo
 
 See how it works in action 👇  
 
@@ -183,12 +183,12 @@ See how it works in action 👇
   <img src="/public/demo.gif" width="500" alt="Project demo" />
 </p>
 
-💬 Contributing
+# 💬 Contributing
 
 Contributions are welcome!
 If you'd like to improve the AI model, workflow, or UI, feel free to submit a pull request or open an issue.
 
-❤️ Acknowledgment
+# ❤️ Acknowledgment
 
 SpeakLIFE is built with compassion to provide hope and connection for anyone who needs to be heard.
 Together, let’s make every voice matter.
